@@ -6,8 +6,6 @@
  */
  :root {
     --bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
     --bs-pink: #d63384;
     --bs-red: #dc3545;
     --bs-orange: #fd7e14;
@@ -19,12 +17,14 @@
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
     --bs-primary: #8588E6;
-    --bs-secondary: #F1A75B;
+    --bs-secondary: #BBA578;
+    --bs-trimary: #5177B4;
+    --bs-purple: #41497E;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
     --bs-danger: #dc3545;
-    --bs-light: #F7FAFA;
+    --bs-light: #FAF1FF;
     --bs-dark: #12141D;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -48,7 +48,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #5A5A5A;
-    background-color: #F7FAFA;
+    background-color: var(--bs-light);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0)
 }
@@ -70,7 +70,7 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
     margin-bottom: .5rem;
     font-weight: 600;
     line-height: 1.2;
-    color: #12141D
+    color: var(--bs-purple);
 }
 
 h1,.h1 {
@@ -3906,7 +3906,7 @@ textarea.form-control-lg {
 }
 
 .nav-tabs .nav-link.active,.nav-tabs .nav-item.show .nav-link {
-    color: #495057;
+    color: var(--bs-trimary);
     background-color: var(--bs-light);
     border-color: #dee2e6 #dee2e6 var(--bs-light)
 }
@@ -3925,7 +3925,7 @@ textarea.form-control-lg {
 
 .nav-pills .nav-link.active,.nav-pills .show>.nav-link {
     color: var(--bs-light);
-    background-color: var(--bs-primary)
+    background-color: var(--bs-trimary);
 }
 
 .nav-fill>.nav-link,.nav-fill .nav-item {
@@ -6602,7 +6602,7 @@ textarea.form-control-lg {
 }
 
 .shadow {
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)
 }
 
 .shadow-sm {
@@ -6738,7 +6738,7 @@ textarea.form-control-lg {
 }
 
 .border-primary {
-    border-color: var(--bs-primary) !important
+    border-color: var(--bs-trimary) !important
 }
 
 .border-secondary {
@@ -11965,4 +11965,8 @@ textarea.form-control-lg {
     .d-print-none {
         display: none !important
     }
+}
+
+.text-white {
+    color: var(--bs-light);
 }
