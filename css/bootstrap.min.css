@@ -17,7 +17,7 @@
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
     --bs-primary: #8588E6;
-    --bs-secondary: #BBA578;
+    --bs-secondary: #EEC3AC;
     --bs-trimary: #5177B4;
     --bs-purple: #41497E;
     --bs-success: #198754;
@@ -11969,4 +11969,8 @@ textarea.form-control-lg {
 
 .text-white {
     color: var(--bs-light);
+}
+
+.text-secondary {
+    color: var(--bs-secondary);
 }
